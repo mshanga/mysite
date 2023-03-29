@@ -1,0 +1,128 @@
+{% extends "base.html" %} 
+
+{% load static %}
+
+{% block content %}
+
+{% include "header.html" %}
+
+    <main class="page-blog-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <section class="page-header">
+                        <h1>Blog Profile</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb foi-breadcrumb">
+                                <li class="breadcrumb-item"><a href="index">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog Single</li>
+                            </ol>
+                        </nav>
+                    </section>
+                    <section class="blog-post-header">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <p class="blog-post-date">02 APR 2020</p>
+                                <h1 class="blog-post-title">Whether you have questions or you would just like to say
+                                    hello, contact us.</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="blog-post-content">
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <img src="{% static 'assets/images/blog_details_5.jpg' %}" alt="blog details" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.</p>
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et.</p>
+                                </blockquote>
+                                <h2>Whether you have questions or you would</h2>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.</p>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <img src="{% static 'assets/images/blog_details_4.jpg' %}" alt="blog details" class="img-fluid">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="blog-post-author-info-section">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <h5 class="blog-post-author-info-section-title">This article was written by</h5>
+                                <div class="blog-post-author-info media">
+                                    <img src="{% static 'assets/images/avatar/avatar_6.jpg' %}" alt="avatar"
+                                        class="align-self-sm-center blog-post-author-avatar">
+                                    <div class="media-body">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h6 class="mr-3 mb-0">Nout Golstein</h6>
+                                            <nav class="author-social-links">
+                                                <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#!"><i class="fab fa-instagram"></i></a>
+                                                <a href="#!"><i class="fab fa-twitter"></i></a>
+                                                <a href="#!"><i class="fab fa-youtube"></i></a>
+                                            </nav>
+                                        </div>
+                                        <p class="author-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="related-posts-section">
+                        <h4 class="related-posts-section-title">You may also like</h4>
+                        <div class="row">
+                            <div class="col-md-4 related-post">
+                                <div class="related-post-thumbnail-wrapper">
+                                    <img src="{% static 'assets/images/blog_details_3.jpg' %}" alt="related post">
+                                    <span class="blog-post-badge">Trending</span>
+                                </div>
+                                <p class="post-published-date">02 APR 2020</p>
+                                <h4 class="post-tite">Lorem ipsum dolor sit amet, consectetur</h4>
+                            </div>
+                            <div class="col-md-4 related-post">
+                                <div class="related-post-thumbnail-wrapper">
+                                    <img src="{% static 'assets/images/blog_details_2.jpg' %}" alt="related post">
+                                    <span class="blog-post-badge">Trending</span>
+                                </div>
+                                <p class="post-published-date">02 APR 2020</p>
+                                <h4 class="post-tite">Lorem ipsum dolor sit amet, consectetur</h4>
+                            </div>
+                            <div class="col-md-4 related-post">
+                                <div class="related-post-thumbnail-wrapper">
+                                    <img src="{% static 'assets/images/blog_details_1.jpg' %}" alt="related post">
+                                    <span class="blog-post-badge">Trending</span>
+                                </div>
+                                <p class="post-published-date">02 APR 2020</p>
+                                <h4 class="post-tite">Lorem ipsum dolor sit amet, consectetur</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

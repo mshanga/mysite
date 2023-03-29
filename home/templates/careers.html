@@ -1,0 +1,120 @@
+{% extends "base.html" %} 
+
+{% load static %}
+
+{% block content %}
+
+    <header class="foi-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
+                <a class="navbar-brand" href="index">
+                    <img src="{% static 'assets/images/logo.svg' %}" alt="FOI">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features">Features</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu" aria-labelledby="pagesMenu">
+                                <a class="dropdown-item" href="blog">Blog</a>
+                                <a class="dropdown-item" href="login">Login</a>
+                                <a class="dropdown-item" href="register">Register</a>
+                                <a class="dropdown-item" href="faq">FAQ</a>
+                                <a class="dropdown-item" href="404">404</a>
+                                <a class="dropdown-item" href="careers">Careers <span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="blog-single">Single blog</a>
+                                <a class="dropdown-item" href="privacy-policy">Privacy policy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item mr-2 mb-3 mb-lg-0">
+                            <a class="btn btn-secondary" href="register">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-secondary" href="login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <section class="page-header">
+                        <h2>Recent jobs</h2>
+                        <h5>Find a team and begin your own story here</h5>
+                    </section>
+                    <section class="career-section">
+                        <div class="card career-card">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush careers-list-group">
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">Andriod Developer</h5>
+                                            <p class="position-location">London, United Kingdom</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">UI Designer (Freelance/Remote)</h5>
+                                            <p class="position-location">United Arab Emirates</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">Senior Back End Developer</h5>
+                                            <p class="position-location">San Francisco, US</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">Web & Graphic Designer</h5>
+                                            <p class="position-location">London, United Kingdom</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">Product Marketing Manager</h5>
+                                            <p class="position-location">Menlo Park, CA</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div>
+                                            <h5 class="position-title">Laravel developer</h5>
+                                            <p class="position-location">London, United Kingdom</p>
+                                        </div>
+                                        <button class="btn btn-primary apply-btn">Apply Now</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

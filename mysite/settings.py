@@ -23,6 +23,7 @@ ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     'jazzmin',
     'polls.apps.PollsConfig',
+    'home.apps.HomeConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
